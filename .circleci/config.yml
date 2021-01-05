@@ -1,13 +1,13 @@
 version: 2
 jobs:
-  one:
+  job_one:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
       - run: echo "Hello World!"
       - run: sleep 25
-  two:
+  job_two:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
